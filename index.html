@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Tickets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+        .carousel {
+    height: 70vh; 
+}
+
+.carousel-inner, .carousel-item, video {
+    height: 100%;
+}
+
+video {
+    object-fit: cover; 
+}
+.banar {
+  width: 80%;  
+  height: 300px;
+  margin: 20px auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+} 
+@media (max-width: 576px) { 
+  .banar {
+    width: 100%;  
+    margin-top: -80px;
+    
+  }
+}
+.card .btn {
+  border: 2px solid black;
+  height: 28px;
+  width: 140px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px; 
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+margin-top: 15px;
+}
+
+.card{
+  border: none;
+}
+.card-body{
+  padding: 0;
+}
+.card-text{
+  color: rgb(76, 9, 139);
+  font-size: 16px; 
+  font-weight:650; 
+}
+.card-img-top{
+  border-radius: 10px;
+  height: 250px;
+  width: 270px;
+  
+}
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.container-fluid .card {
+  width: 250px;
+  height: 350px; 
+  text-align: center;
+  margin-left: 20px;
+  flex-shrink: 0;
+  /* border: 1px solid #ddd; */
+  overflow: hidden;
+}
+
+.container-fluid .card-img-top {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover; 
+  display: block; 
+}
+
+.container-fluid .card-body {
+  height: 170px; 
+  overflow: hidden;
+}
+
+.text{
+  color:rgb(76, 9, 139) ;
+}
+.text p{
+  color: black;
+}
+
+
+
+
+.scrolling-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.scrolling-wrapper .card {
+  flex: 0 0 auto;
+  width: 18rem;
+}
+
+.card-details {
+  font-size: 14px;
+  /* color: #555; */
+  line-height: 1.4;
+}
+
+
+
+.custom-card {
+    width: 14rem; 
+    height: 250px; 
+   
+  }
+
+  .custom-card img {
+    height: 150px; 
+    object-fit: cover; 
+  }
+  .form{
+    margin-left: 73px;
+  }
+  .abc{
+    color: black;
+  }
+  .navbar-light{
+    margin: 0%;
+    padding: 0%;
+  }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://holidayofferz.com/wp-content/uploads/2025/02/Holidayofferz-Fayeda-Logo-New.png" alt="Logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <video class="d-block w-100" autoplay loop muted>
+          <source src="./third.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="carousel-item">
+        <video class="d-block w-100" autoplay loop muted>
+          <source src="./second.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="carousel-item">
+        <video class="d-block w-100" autoplay loop muted>
+          <source src="./first.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  
+  </div>
+
+  <div class="container my-4"> <!-- Main container for spacing -->
+  
+    <!-- Banner Section -->
+    <div class="banar">
+      <img src="./images/Eid-banner-2-1024x280.png" alt="Eid Banner">
+    </div>
+  
+    <!-- Recommended Section -->
+    <div class="text">
+      <h4>Recommended for You</h4>
+      <p>Tours and activities tailored to your interests.</p>
+    </div>
+  
+    <!-- Cards Section -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./images/desert.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-light">Likely To Sell Out</a><br>
+            <p class="card-text">Desert Safari With Dune bashing BBQ Dinner and More Activities</p> <br>
+           
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./images/dubai.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-light">Likely To Sell Out</a><br>
+            <p class="card-text">Half Day Dubai City Tour With Evening Show Marina Cruise</p><br>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./images/taj.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-light">Likely To Sell Out</a><br>
+            <p class="card-text">Full Day Abu Dhabi City Tour Sheikh Zayed Grand Mosque from Dubai</p><br>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./images/miracle.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-light">Likely To Sell Out</a><br>
+            <p class="card-text">Miracle Garden With Entrance Ticket and Transfers</p><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Scrolling Cards Section -->
+
+    <div class="text">
+      <h4>Featured Destinations</h4>
+      <p>Explore our top-rated destinations, handpicked for unforgettable experiences
+
+      </p>
+      
+    </div>
+  
+<div class="row mt-4">
+  <div class="scrolling-wrapper d-flex flex-nowrap overflow-auto">
+    
+    <div class="card me-3" style="width: 18rem;">
+      <img src="./images/armenia.jpeg" class="card-img-top" alt="Armenia">
+      <div class="card-body">
+        <p class="card-text fw-bold">Armenia</p>
+        <p class="card-details">Ancient history, monasteries, mountains,<br> Yerevan, cuisine, culture, landscapes,<br> traditions, hospitality, Christianity.</p>
+        <a href="#" class="abc">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card me-3" style="width: 18rem;">
+      <img src="./images/gorgia.jpeg" class="card-img-top" alt="Georgia">
+      <div class="card-body">
+        <p class="card-text fw-bold">Georgia</p>
+        <p class="card-details">Tbilisi, mountains, wine, hospitality,<br> monasteries, cuisine, culture, history,<br> nature, adventure.</p>
+        <a href="#" class="abc">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card me-3" style="width: 18rem;">
+      <img src="./images/azerbaijaan.jpeg" class="card-img-top" alt="Azerbaijan">
+      <div class="card-body">
+        <p class="card-text fw-bold">Azerbaijan</p>
+        <p class="card-details">Baku, Flame Towers, Caspian Sea, mud <br>volcanoes, carpets, modern history, cuisine,<br> culture, landscapes.</p>
+        <a href="#" class="abc">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card me-3" style="width: 18rem;">
+      <img src="./images/kazakistan.jpeg" class="card-img-top" alt="Kazakhstan">
+      <div class="card-body">
+        <p class="card-text fw-bold">Kazakhstan</p>
+        <p class="card-details">Astana, Almaty, steppes, mountains, <br>nomadic culture, Baikonur, lakes, history,<br> hospitality, modernity.</p>
+        <a href="#" class="abc">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card me-3" style="width: 18rem;">
+      <img src="./images/kyrigstan.jpeg" class="card-img-top" alt="Kyrgyzstan">
+      <div class="card-body">
+        <p class="card-text fw-bold">Kyrgyzstan</p>
+        <p class="card-details">Bishkek, mountains, lakes, nomads, yurts,<br> horseback riding, nature, culture, traditions,<br> adventure.</p>
+        <a href="#" class="abc">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card me-3" style="width: 18rem;">
+      <img src="./images/malasia.jpeg" class="card-img-top" alt="Malaysia">
+      <div class="card-body">
+        <p class="card-text fw-bold">Malaysia</p>
+        <p class="card-details">Kuala Lumpur, islands, rainforests, multi <br>cultural, food, Petronas Towers, beaches,<br> wild life, heritage, adventure.</p>
+        <a href="#" class="abc">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="text">
+  <h4>Explore Our Top Destinations</h4>
+  <p>Discover breathtaking destinations for unforgettable travel experiences</p>
+</div>
+
+<div class="container mt-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5">
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/armenia.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Armenia</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/gorgia.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Georgia</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/azerbaijan.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Azerbaijan</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/maldives.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Maldives</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5">
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/kazakistan.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Kazakhstan</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/canada.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Canada</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/uk.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">United Kingdom</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/europe.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Europe</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5">
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/srilanka.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Srilanka</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/bali.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Bali</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/mauritus.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Mauritus</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card custom-card">
+        <img src="./images/vietnam.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Vietnam</p>
+          <a href="#" class="abc">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  
+  
+  
+  
+  
+  <!-- End of Main Container -->
+
+  <div class="text form">
+    <h4>Dubai’s Top Activities & Must-Do Experiences</h4>
+    <p>Discover the best of Dubai with thrilling adventures, cultural experiences, and world-class attractions</p>
+  </div>
+  
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5">
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/gbvl.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Global Village & Miracle Garden</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/abhudhabi city.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Abudhabi City Tour</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/ferrari.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Abudhabi City Tour & Ferrari World</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">v
+        <div class="card custom-card">
+          <img src="./images/globalvillage.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Global Village</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5">
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/desert safari.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Desert safari</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/hotair.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Hot Air Baloon</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/miracle garden.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Miraclr Garden</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/dibba.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Dibba Musandam Tour</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5">
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/dubai city.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Dubai City Tour</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/burj.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Burk Khalifa</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/helicopter.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Helicopter Ride</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card custom-card">
+          <img src="./images/dhow.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Dhow cruice</p>
+            <a href="#" class="abc">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <footer class="bg-light text-center p-4 mt-5">
+      <p>© 2025 Holiday Tickets. All rights reserved.</p>
+    </footer>
+    
+  
+
+
+</body>
+</html>
